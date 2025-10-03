@@ -3,7 +3,6 @@
   "type": "module",
   "version": "0.2.0",
   "private": true,
-  "packageManager": "pnpm@10.11.0",
   "engines": {
     "node": ">=20.11"
   },
@@ -43,7 +42,7 @@
     "pluralize": "^8.0.0",
     "qr-code-styling": "^1.9.2",
     "radix-vue": "^1.9.17",
-    "ua-parser-js": "^2.0.3",
+    "ua-parser-js": "^2.0.5",
     "vaul-vue": "^0.4.1",
     "vee-validate": "^4.15.0",
     "virtua": "^0.41.2",
@@ -54,7 +53,7 @@
   "devDependencies": {
     "@anatine/zod-mock": "^3.14.0",
     "@antfu/eslint-config": "^4.13.2",
-    "@cloudflare/vitest-pool-workers": "^0.8.33",
+    "@cloudflare/vitest-pool-workers": "^0.9.10",
     "@nuxt/eslint": "^1.4.1",
     "@nuxt/eslint-config": "^1.4.1",
     "@nuxthub/core": "^0.8.27",
@@ -67,14 +66,14 @@
     "eslint": "^9.27.0",
     "eslint-plugin-format": "^1.0.1",
     "lint-staged": "^16.0.0",
-    "nuxt": "^3.17.4",
+    "nuxt": "^3.19.2",
     "shadcn-nuxt": "^2.1.0",
     "simple-git-hooks": "^2.13.0",
     "tailwind-merge": "^3.3.0",
     "tailwindcss-animate": "^1.0.7",
     "vitest": "^3.1.4",
     "vue-tsc": "^2.2.10",
-    "wrangler": "^4.16.1"
+    "wrangler": "^4.42.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npm run lint-staged"
@@ -83,5 +82,11 @@
     "*.{js,jsx,ts,tsx,vue}": [
       "eslint --fix"
     ]
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39",
+  "pnpm": {
+    "overrides": {
+      "koa": "2.16.2"
+    }
   }
 }
